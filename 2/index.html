@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+    var img = document.createElement("img");
+    function autos()
+    {
+        var x = document.getElementById("auto").value;
+        img.src = "img/" +x+ ".jpg";
+        document.body.appendChild(img);
+    }
+</script>
+ <select name="auto" id="auto">
+ <option value="mercedes">Mercedes</option>
+     <option value="audi">Audi</option>
+ <option value="ford">Ford</option>
+ <option value="opel">Opel</option>
+ <option value="ferrari">Ferrari</option>
+ </select>
+<input type="submit" onclick="autos()">
+<div id="img"></div>
+</body>
+</html>
